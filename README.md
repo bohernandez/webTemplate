@@ -1,25 +1,26 @@
 # webTemplate
+Took from psd templates for Homepage, About and contact pages.
 e.Oliver Photographer Template from psd to Web.
-I got the templates of tree pages Homepage, About and contact.
 
 ## Tools
-In this project I decided to use GatsbyJS because the website seems to be plain,
-gatsby is a static site generator for React, so if we need something more dynamic,
-gatsby has integrated GraphQL
+In this project I decided to use GatsbyJS because the website seems to have plain information, gatsby is a static site generator for React, but if we need something more dynamic, gatsby has integrated GraphQL
 
 ## Run it
-Make sure to run npm install in the project folder
+Firt of all clone the repository.
+
+Then make sure to run npm install in the project folder
 ```sh
 npm install
 ```
 
 Then you can run it by:
 ```sh
-cd gatsby-example-site
+cd webTemplate
 gatsby develop
 ```
 
 Also it can be checked in the github live preview.
+
 https://bohernandez.github.io/webTemplate/
 
 
