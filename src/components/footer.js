@@ -3,8 +3,8 @@ import Link from 'gatsby-link'
 import './footer.scss';
 
 const Footer = ({ siteTitle }) => (
-    <footer className='main-footer bg-dark pt-4 mt-4'>
-        <div className='container'>
+    <footer className='main-footer bg-dark-custom pt-4'>
+        <div className='container text-center text-md-left'>
             <div className='row'>
                 <div className='col-md-4'>
                     <h5 className="text-uppercase">Office</h5>

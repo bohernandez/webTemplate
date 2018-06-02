@@ -4,7 +4,7 @@ import './header.scss';
 
 const Header = ({ siteTitle }) => (
   <div>
-  <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark navbar__menu"
+  <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark-custom navbar__menu"
         data-spy="affix" data-offset-top="197">
     <div className='container-fluid'>
       <div className="navbar__logo">

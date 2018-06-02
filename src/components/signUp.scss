@@ -1,4 +1,38 @@
 .signup-container {
     padding-top: 200px;
     padding-bottom: 200px;
+    .signup-container__title {
+        font-family: 'Merriweather';
+        font-size: 48px;
+        font-weight: 500;
+        max-width: 673px;
+        margin: 0 auto;
+        color: #fff;
+    }
+
+    .signup-container__vertical-line {
+        height: 140px;
+        border-right: 1px solid #fff;
+        width: 3px;
+        margin: 25px auto;
+    }
+    .signup-container__email-form {
+        display: block;
+        input {
+            width: 415px;
+            height: 89px;
+            padding: 20px;
+            border: 1px solid #fff;
+            color: #fff;
+            &::placeholder {
+                color: #fff;
+            }
+        }
+        button {
+            width: 100px;
+            height: 89px;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+    }
 }

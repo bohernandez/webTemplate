@@ -24,9 +24,7 @@ const Layout = ({ children, data }) => (
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" />
     </Helmet>
     <Header siteTitle={data.site.siteMetadata.title} />
-    <div
-      className="container"
-    >
+    <div>
       {children()}
     </div>
     <Footer />

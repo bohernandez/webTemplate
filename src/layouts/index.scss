@@ -1,3 +1,4 @@
+$dark-background-color: #111111;
 html {
   font-family: 'Poppins', sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6,6 +7,7 @@ html {
 body {
   margin: 0;
 }
+
 article,
 aside,
 details,
@@ -621,4 +623,8 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.bg-dark-custom {
+  background-color: $dark-background-color !important;
 }
