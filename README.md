@@ -1,18 +1,16 @@
-# gatsby-starter-default
-The default Gatsby starter.
+# webTemplate
+e.Oliver Photographer Template from psd to Web.
+I got the templates of tree pages Homepage, About and contact.
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+## Tools
+In this project I decided to use GatsbyJS because the website seems to be plain,
+gatsby is a static site generator for React, so if we need something more dynamic,
+gatsby has integrated GraphQL
 
-## Install
-
-Make sure that you have the Gatsby CLI program installed:
+## Run it
+Make sure to run npm install in the project folder
 ```sh
-npm install --global gatsby-cli
-```
-
-And run from your CLI:
-```sh
-gatsby new gatsby-example-site
+npm install
 ```
 
 Then you can run it by:
@@ -21,9 +19,7 @@ cd gatsby-example-site
 gatsby develop
 ```
 
-## Deploy
+Also it can be checked in the github live preview.
+https://bohernandez.github.io/webTemplate/
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
-# webTemplate
-e.Oliver Photographer Template from psd to Web
