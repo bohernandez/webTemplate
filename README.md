@@ -27,4 +27,3 @@ gatsby develop
 
 # webTemplate
 e.Oliver Photographer Template from psd to Web
->>>>>>> 32e73d8d96eb342e6333ffad25e267500b035374

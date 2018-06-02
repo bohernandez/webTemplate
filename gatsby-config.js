@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Home Page Header',
+    menu: {
+      about: 'About Me',
+      contact: 'Contact Me',
+    }
   },
   plugins: ['gatsby-plugin-react-helmet', {
       resolve: `gatsby-plugin-sass`,
