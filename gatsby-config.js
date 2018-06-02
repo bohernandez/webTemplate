@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/webTemplate`,
   siteMetadata: {
     title: 'Home Page Header',
   },

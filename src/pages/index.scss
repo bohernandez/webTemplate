@@ -53,6 +53,7 @@
             left: -38px;
         }
     }
+
     .hero-container__description {
         font-family: 'Poppins';
         font-size: 14px;
@@ -124,5 +125,25 @@
                 width: 52px;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .hero-container__title {
+        letter-spacing: .1rem;
+        font-size: 3.0rem;
+        margin-bottom: 40px;
+    }
+
+    .hero-container__description {
+        width: 100% !important;
+    }
+
+    .hero-container__social {
+        -ms-transform: rotate(0deg) !important; /* IE 9 */
+        -webkit-transform: rotate(0deg) !important; /* Safari 3-8 */
+        transform: rotate(0deg) !important;
+        position: static !important;
+
     }
 }

@@ -31,9 +31,6 @@ const IndexPage = () => (
       </div>
     </header>
 
-    <section>
-      <div id='about'>About Us</div>
-    </section>
     <SignUp />
   </div>
 )

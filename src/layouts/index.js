@@ -5,12 +5,14 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/header'
 import Footer from '../components/footer'
-import $ from 'jquery';
+
+import jQuery from 'jquery';
 import 'bootstrap';
 
 import './index.scss';
 
-const Layout = ({ children, data }) => (
+const Layout = ({ children, data }) => {
+  return (
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
@@ -28,9 +30,8 @@ const Layout = ({ children, data }) => (
       {children()}
     </div>
     <Footer />
-    
   </div>
-)
+)}
 
 Layout.propTypes = {
   children: PropTypes.func,
