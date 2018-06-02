@@ -1,0 +1,39 @@
+.hero-container {
+    background-image: url('../images/background-hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    position: relative;
+
+    &::before{
+        content: '';
+        background-image: url('../images/scan.png');
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .hero-container__intro {
+        font-family: 'Poppins';
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .hero-container__title {
+        font-family: 'Merriweather';
+        font-size: 58px;
+        font-weight: 700;
+    }
+    .hero-container__description {
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 2;
+        width: 50%;
+        text-align: justify;
+    }
+
+}
