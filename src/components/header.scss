@@ -13,12 +13,19 @@
 }
 
 .navbar__menu {
-    height: 110px;
+    min-height: 110px;
+    height: auto;
     padding: 30px 15px;
     width: 100%;
     transition: all 0.6s 0s cubic-bezier(0.7, 0, 0.3, 1);
     top: 0;
     z-index: 1003; 
+}
+.navbar-collapse {
+    &.show {
+        background: #111111;
+        opacity: 0.9;
+    }
 }
 
 .navbar {

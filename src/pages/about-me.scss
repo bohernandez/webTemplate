@@ -1,0 +1,48 @@
+.quote-container {
+    padding-top: 200px;
+    .quote-container__wrap {
+        margin:0 auto;
+        padding-top: 60px;
+        &:before{
+            background-image: url('../images/icon-quote.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            content: '';
+            height: 52px;
+            margin: 0 auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 60px;
+        }
+        margin-bottom: 200px;
+    }
+
+    .quote-container__text {
+        font-family: 'Merriweather';
+        font-size: 45px;
+        font-weight: 100;
+        text-align: center;
+        color: #fff;
+        &:before{
+            background-color: #fff;
+            content: '';
+            height: 120px;
+            margin: 0 auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 1px;
+            bottom: 0;
+            margin-bottom: -162px;
+        }
+    }
+}
+
+.video-container {
+    .video-container__iframe {
+        width: 100%;
+        border: 0;
+    }
+}

@@ -7,6 +7,20 @@
     height: 100vh;
     position: relative;
 
+    .hero-container__wrap {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: -moz-box;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        padding: 30px 15px 0;
+        position: relative;
+    }
+
     &::before{
         content: '';
         background-image: url('../images/scan.png');
@@ -21,11 +35,23 @@
         text-transform: uppercase;
         font-size: 14px;
         font-weight: 600;
+        margin-bottom: 30px;
     }
     .hero-container__title {
         font-family: 'Merriweather';
         font-size: 58px;
         font-weight: 700;
+        position:relative;
+        margin-bottom: 60px;
+        &:before{
+            content: '';
+            width: 140px;
+            border-top: 1px solid #fff;
+            height: 2px;
+            position: absolute;
+            bottom: -14px;
+            left: -38px;
+        }
     }
     .hero-container__description {
         font-family: 'Poppins';
@@ -33,7 +59,70 @@
         font-weight: 300;
         line-height: 2;
         width: 50%;
+        margin-bottom: 40px;
         text-align: justify;
     }
+    .hero-container__link {
+        color: #fff;
+        text-transform: uppercase;
+        font-family: 'Merriweather';
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+        &:before {
+            content: '';
+            width: 102px;
+            height: 29px;
+            position:absolute;
+            z-index: -1;
+            color:#6371fd;
+            background-color: #6371fd;
+            left: -15px;
+            top: -16px;
+            transition: all 0.6s 0s cubic-bezier(0.7, 0, 0.3, 1);
+        }
+    }
+    .hero-container__social {
+        position: absolute;
+        left: -95px;
+        top:50%;
+        text-align: center;
+        -ms-transform: rotate(-90deg); /* IE 9 */
+        -webkit-transform: rotate(-90deg); /* Safari 3-8 */
+        transform: rotate(-90deg);
+        display: block;
+        a {
+            font-family: 'Merriweather';
+            font-size: 12px;
+            color: #fff;
+            margin-right: 30px;
+        }
+    }
+    .hero-container__anchor {
+        -ms-transform: rotate(-90deg); /* IE 9 */
+        -webkit-transform: rotate(-90deg); /* Safari 3-8 */
+        transform: rotate(-90deg);
+        position: absolute;
+        right: 0;
+        top: 50%;
 
+        .hero-container__anchor-link {
+            font-family: 'Poppins';
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color:#fff;
+            position: relative;
+            span:before{
+                content: '';
+                position: absolute;
+                height: 10px;
+                border-bottom: 1px solid white;
+                top: 0;
+                bottom: 0;
+                left: -58px;
+                width: 52px;
+            }
+        }
+    }
 }
