@@ -6,7 +6,7 @@ e.Oliver Photographer Template from psd to Web.
 In this project I decided to use GatsbyJS because the website seems to have plain information, gatsby is a static site generator for React, but if we need something more dynamic, gatsby has integrated GraphQL
 
 ## Run it
-Firt of all clone the repository.
+First of all clone the repository.
 
 Then make sure to run npm install in the project folder
 ```sh

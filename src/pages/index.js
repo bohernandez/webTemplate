@@ -1,7 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import SignUp from '../components/signUp'
+
 import './index.scss'
+import helloImage from '../images/deer-wallpaper.jpg';
 
 const IndexPage = () => (
   <div>
@@ -30,6 +32,24 @@ const IndexPage = () => (
         <a href="#about" className="hero-container__anchor-link"><span>Explore More</span></a>
       </div>
     </header>
+    <section className="hello-container bg-dark-custom">
+      <div className="container">
+        <div className="hello-container__image-box">
+          <img src={helloImage} />
+        </div>
+        <div className="row">
+          <div className="col-12 col-md-8 offset-md-2 ">
+            <h2 className="hello-container__title">
+              Hello.
+            </h2>
+            <p className="hello-container__quote">
+              All that we do is work on the style of life, on "being." The object as such is not very interesting. I wonder how people will live with him, what metamorphoses he will undergo in the house. I always liked very simple things. In all. Doing simple things is the most difficult thing. If we talk about simplicity, then it is a synthesis.
+            </p>
+            <div className="hello-container__author">- Edward Oliver</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <SignUp />
   </div>
