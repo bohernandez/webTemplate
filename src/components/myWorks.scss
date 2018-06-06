@@ -1,0 +1,99 @@
+.myworks-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+    .myworks-container__title {
+        font-family: 'Merriweather';
+        font-size: 58px;
+        font-weight: 700;
+        position: relative;
+        margin-bottom: 60px;
+        color: #fff;
+        position: relative;
+        &:before {
+            content: '';
+            width: 140px;
+            border-top: 1px solid #fff;
+            height: 2px;
+            position: absolute;
+            bottom: -14px;
+            left: -38px;
+        }
+    }
+    .myworks-container__description {
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-weight: 300;
+        color: #fff;
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
+    @media only screen and (max-width: 991px) {
+        .myworks-container__description {
+            width: 70%;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .myworks-container__description {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+
+    .myworks-container__photo-grid {
+        margin-right: -15px;
+        margin-left: -15px;
+        
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        figure {
+            width: 100% !important;
+            height: auto !important;
+            margin-bottom: 0;
+            img {
+                margin-bottom: 0;
+            }
+        }
+        .portrait {
+            grid-row-end: span 2;
+        }
+
+        .landscape {
+            grid-column-end: span 2;
+        }
+        
+    }
+
+    @media only screen and (max-width: 500px) {
+        .myworks-container__photo-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .myworks-container__link {
+        color: #fff;
+        font-weight: 500;
+        letter-spacing: .2rem;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        float: right;
+        margin:50px;
+        font-size: 14px;
+        &:before {
+            background-color: #fff;
+            content: '';
+            height: 1px;
+            margin: auto 0;
+            position: absolute;
+            top: 0;
+            bottom: 1px;
+            left: -55%;
+            width: 40%;
+            transition: all 0.6s cubic-bezier(0.7, 0, 0.3, 1);
+        }
+    }
+}

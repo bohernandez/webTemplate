@@ -1,11 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import SignUp from '../components/signUp'
+import MyWorks from '../components/myWorks'
+import Counters from '../components/counters'
 
 import './index.scss'
 import helloImage from '../images/deer-wallpaper.jpg';
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <div>
     <header className="hero-container">
       <div className='container'>
@@ -51,8 +53,24 @@ const IndexPage = () => (
       </div>
     </section>
 
+    <MyWorks imagesList={data.allItems2Json.edges} />
+
+    <Counters />
+
     <SignUp />
   </div>
 )
 
 export default IndexPage
+
+export const query = graphql`
+  query ImageGalleryQuery {
+    allItems2Json {
+      edges {
+        node {
+          ...ImageGalleryGet
+        }
+      }
+    }
+  }
+`
