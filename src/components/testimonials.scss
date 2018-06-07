@@ -1,20 +1,154 @@
-.swiper-custom-pagination {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    bottom: 0 !important;
-    max-width: 300px;
-    text-align: center;
-}
+.test-swiper {
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+    & > .swiper-wrapper > div {
+        width: 785px;
+    }
+    .test-swiper__custom-pagination {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 0 !important;
+        max-width: 300px;
+        text-align: center;
+        color: #fff;
+    }
+    .test-swiper__link-next,
+    .test-swiper__link-prev {
+        color: #fff;
+        position:relative;
+        text-transform: uppercase;
+        &:after {
+            background-color: #fff;
+            content: '';
+            height: 2px;
+            margin: auto 0;
+            position: absolute;
+            top: -1px;
+            bottom: 0;
+            width: 60px;
+            transition: all 0.3s 0s cubic-bezier(0.7, 0, 0.3, 1);
+        }
+    }
+    
+    .test-swiper__link-prev {
+        float: left;
+        padding-left:60px;
+        &:after {
+            right: -100%;
+        }
+    }
+    
+    .test-swiper__link-next {
+        float: right;
+        padding-right: 60px;
+        &:after {
+            left: -100%;
+        }
+    }
+    .test-swiper__number {
+        font-size: 4.29rem;
+        font-weight: 700;
+        letter-spacing: .5rem;
+        line-height: 2;
+        margin-left: 30px;
+        position: absolute;
+        color: #fff;
+        top: 0;
+        z-index: 2;
+        &:after {
+            background-color: #5328fe;
+            content: '';
+            height: 28%;
+            position: absolute;
+            left: -60%;
+            bottom: 25%;
+            width: 100%;
+            z-index: -1;
+            transition: all 2s 800ms cubic-bezier(0.7, 0, 0.3, 1);
+        }
+    }
+    .test-swiper__box {
+        background-color: #1a1a1a;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: -moz-box;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        height: 460px;
+        position: relative;
+        width: 460px;
+        z-index: 1;
+        &:after {
+            background-color: #0f0f0f;
+            content: '';
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: -180px;
+            width: 180px;
+            z-index: -1;
+        }
+        .test-swiper__img {
+            background-color: #111111;
+            height: 228px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            width: 228px;
+            img {
+                width:100%;
+            }
+        }
+        .test-swiper__info {
+            position: absolute;
+            bottom: 22px;
+            text-align: center;
+            width: 100%;
+            .test-swiper__author,
+            .test-swiper__organization {
+                font-family: "Poppins", sans-serif;
+                font-size: 1.29rem;
+                font-weight: 300;
+                letter-spacing: .15rem;
+                color: #fff;
+            }
+            .test-swiper__author {
+                font-family: "Poppins", sans-serif;
+                font-size: 1.29rem;
+                font-weight: 300;
+                letter-spacing: .15rem;
+            }
+            .test-swiper__organization {
+                font-size: .86rem;
+                margin-top: 17px;
+                opacity: .4;
+            }
+        }
+    }
+    .test-swiper__comment {
+        font-size: 12px;
+        line-height: 2.4;
+        margin-left: 410px;
+        position: absolute;
+        top: 170px;
+        z-index: 1;
+        color: #fff;
 
-.swiper-link-prev {
-    float: left;
-    padding-left:60px;
+        &:after {
+            background-color: #fff;
+            content: '';
+            height: 1px;
+            position: absolute;
+            top: -35px;
+            left: -100px;
+            width: 140px;
+        }
+    }
 }
-
-.swiper-link-next {
-    float: right;
-    padding-right: 60px;
-}
-

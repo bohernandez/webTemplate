@@ -4,36 +4,69 @@ import './testimonials.scss'
 
 class Testimonials extends React.Component {
   render() {
+    const { itemsList } = this.props;
     const params = {
         pagination: {
-          el: '.swiper-custom-pagination',
+          el: '.test-swiper__custom-pagination',
           type: 'fraction',
-        },
-        effect: 'coverflow',        
+        },     
         grabCursor: true,
-        slidesPerView: 3,
+        slidesPerView: 'auto',
+        breakpoints: {
+            // when window width is <= 768px
+            768: {
+              slidesPerView: 1,
+              spaceBetween: 100
+            }
+        },
         loop: true,
         centeredSlides: true,
         navigation: {
-          nextEl: '.swiper-link-next',
-          prevEl: '.swiper-link-prev',
+          nextEl: '.test-swiper__link-next',
+          prevEl: '.test-swiper__link-prev',
         },
-        renderPrevButton: () => <div className="swiper-link-prev">Prev</div>,
-        renderNextButton: () => <div className="swiper-link-next">Next</div>,
+        spaceBetween: 140,        
+        renderPrevButton: () => <div className="test-swiper__link-prev">Prev</div>,
+        renderNextButton: () => <div className="test-swiper__link-next">Next</div>,
+        containerClass: 'swiper-container test-swiper'
       };
 
     return (
         <Swiper {...params}>
-            <div>
-                Slide 1<br/><br/><br/><br/>
-            </div>
-            <div>Slide 2<br/><br/><br/><br/></div>
-            <div>Slide 3<br/><br/><br/><br/></div>
-            <div>Slide 4<br/><br/><br/><br/></div>
-            <div>Slide 5<br/><br/><br/><br/></div>
+            {itemsList.map( ({node})=> (
+                    <div key={node.id} >
+                        <div className="test-swiper__number">
+				            <span>0{node.id}.</span>
+				        </div>                        
+                        <div className="test-swiper__box">
+                            <div className="test-swiper__img">
+                                <img src={node.avatar} alt={node.name + node.lastname} />
+                            </div>
+                            <div className="test-swiper__info">
+                                <h3 className="test-swiper__author">{node.name} <strong>{node.lastname}</strong></h3>
+                                <h4 className="test-swiper__organization">{node.organization}</h4>
+                            </div>
+				        </div>
+                        <div className="test-swiper__comment">
+				            <p>{node.comment}</p>
+                        </div>
+                    </div>
+            ))}
         </Swiper>
     )
   }
 }
 
 export default Testimonials;
+
+
+export const TestimonialsFragment = graphql`
+  fragment TestimonialsGet on ReviewsJson {
+        id,
+        avatar,
+        name,
+        lastname,
+        organization,
+        comment,
+  }
+`

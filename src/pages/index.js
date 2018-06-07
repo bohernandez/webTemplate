@@ -58,7 +58,12 @@ const IndexPage = ({data}) => (
 
     <Counters />
 
-    <Testimonials />
+    <section className="bg-dark-custom" style={{padding: '100px 50px'}}>
+      <h2 className="title-vertical-line">Testimonials.</h2>
+      <Testimonials itemsList={data.allReviewsJson.edges} />
+    </section>
+    
+    <MyWorks imagesList={data.allItems2Json.edges} />
     
     <SignUp />
   </div>
@@ -72,6 +77,13 @@ export const query = graphql`
       edges {
         node {
           ...ImageGalleryGet
+        }
+      }
+    },
+    allReviewsJson {
+      edges {
+        node {
+          ...TestimonialsGet
         }
       }
     }
