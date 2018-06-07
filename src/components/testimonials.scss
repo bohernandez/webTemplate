@@ -1,0 +1,20 @@
+.swiper-custom-pagination {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0 !important;
+    max-width: 300px;
+    text-align: center;
+}
+
+.swiper-link-prev {
+    float: left;
+    padding-left:60px;
+}
+
+.swiper-link-next {
+    float: right;
+    padding-right: 60px;
+}
+

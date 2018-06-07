@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import SignUp from '../components/signUp'
 import MyWorks from '../components/myWorks'
 import Counters from '../components/counters'
+import Testimonials from '../components/testimonials'
 
 import './index.scss'
 import helloImage from '../images/deer-wallpaper.jpg';
@@ -57,6 +58,8 @@ const IndexPage = ({data}) => (
 
     <Counters />
 
+    <Testimonials />
+    
     <SignUp />
   </div>
 )
