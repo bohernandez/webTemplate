@@ -10,7 +10,7 @@ import './index.scss'
 import helloImage from '../images/deer-wallpaper.jpg';
 
 const IndexPage = ({data}) => (
-  <div>
+  <div>    
     <header className="hero-container">
       <div className='container'>
         <div className='hero-container__wrap'>

@@ -12,7 +12,6 @@ import 'bootstrap';
 import './index.scss';
 
 const Layout = ({ children, data }) => {
-  {console.log(data)}
   return (
   <div>
     <Helmet
