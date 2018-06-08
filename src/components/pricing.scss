@@ -1,0 +1,45 @@
+.pricing-container {
+    color: #fff;
+    .pricing-box {
+        z-index: 1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 60px;
+        &:before {
+            background-color: #111111;
+            content: '';
+            height: 100%;
+            opacity: .8;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            transition: all 0.6s 0s cubic-bezier(0.7, 0, 0.3, 1);
+            z-index: 0;
+        }
+    }
+    .pricing-title {
+        margin-top: 0;
+        margin-bottom: 40px;
+        position: relative;
+        font-size: 28px;
+        font-family: 'Merryweather';
+        letter-spacing: .3rem;
+        line-height: 1.5;
+    }
+    .pricing-item {
+        letter-spacing: .1rem;
+        margin-bottom: 16px;
+        .pricing-item__name {
+            font-size: .86rem;
+            font-weight: 300;
+            opacity: .5;
+            text-transform: uppercase;
+        }
+        .pricing-item__sub {
+            font-size: 14px;
+            opacity: .9
+        }
+    }
+}

@@ -21,7 +21,7 @@ const AboutMe = () => (
 
 
     <section className="video-container bg-dark-custom">
-      <iframe className="video-container__iframe" width="560" height="625" src="https://www.youtube.com/embed/hW9PUzl7j9w?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe className="video-container__iframe" width="560" height="625" src="https://www.youtube.com/embed/hW9PUzl7j9w?rel=0&amp;controls=0&amp;showinfo=0" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
     </section>
 
     <SignUp />

@@ -4,6 +4,7 @@ import SignUp from '../components/signUp'
 import MyWorks from '../components/myWorks'
 import Counters from '../components/counters'
 import Testimonials from '../components/testimonials'
+import Pricing from '../components/pricing'
 
 import './index.scss'
 import helloImage from '../images/deer-wallpaper.jpg';
@@ -63,8 +64,8 @@ const IndexPage = ({data}) => (
       <Testimonials itemsList={data.allReviewsJson.edges} />
     </section>
     
-    <MyWorks imagesList={data.allItems2Json.edges} />
-    
+    <Pricing pricingList={data.allPricingJson.edges} />
+
     <SignUp />
   </div>
 )
@@ -72,7 +73,7 @@ const IndexPage = ({data}) => (
 export default IndexPage
 
 export const query = graphql`
-  query ImageGalleryQuery {
+  query HomePageQuerys {
     allItems2Json {
       edges {
         node {
@@ -84,6 +85,13 @@ export const query = graphql`
       edges {
         node {
           ...TestimonialsGet
+        }
+      }
+    },
+    allPricingJson {
+      edges {
+        node {
+          ...PricingList
         }
       }
     }
