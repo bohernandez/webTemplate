@@ -266,3 +266,21 @@
         width: 2px;
     }
 }
+
+.brands-container {
+    padding-top:200px;
+    .brands-container__item {
+        margin-bottom: 100px;
+    }
+    .brands-container__img {
+        height: 120px;
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .brands-container__img {
+        height: 80px;
+    }
+}

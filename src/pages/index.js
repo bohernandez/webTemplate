@@ -66,6 +66,18 @@ const IndexPage = ({data}) => (
     
     <Pricing pricingList={data.allPricingJson.edges} />
 
+    <section className="bg-dark-custom brands-container">
+      <div className="container">
+        <div className="row">
+                {data.allBrandsJson.edges.map( ({node})=> (
+                  <div className="col-6 col-sm-4 col-md-3 brands-container__item" key={node.id}>
+                    <img className="brands-container__img" src={node.src} />
+                  </div>
+                ))}
+        </div>
+      </div>
+    </section>
+
     <SignUp />
   </div>
 )
@@ -92,6 +104,14 @@ export const HomePageQuerys = graphql`
       edges {
         node {
           ...PricingList
+        }
+      }
+    },
+    allBrandsJson{
+      edges {
+        node {
+          id,
+          src
         }
       }
     }
