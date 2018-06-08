@@ -12,6 +12,7 @@ import 'bootstrap';
 import './index.scss';
 
 const Layout = ({ children, data }) => {
+  {console.log(data)}
   return (
   <div>
     <Helmet
@@ -26,7 +27,7 @@ const Layout = ({ children, data }) => {
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" />
     </Helmet>
-    <Header siteTitle={data.site.siteMetadata.title} />
+    <Header />
     <div>
       {children()}
     </div>

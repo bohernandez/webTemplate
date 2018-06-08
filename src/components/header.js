@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import './header.scss';
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <div>
   <nav className="navbar navbar__menu fixed-top navbar-expand-lg navbar-dark affix">
     <div className='container-fluid'>

@@ -72,7 +72,7 @@ const IndexPage = ({data}) => (
 
 export default IndexPage
 
-export const query = graphql`
+export const HomePageQuerys = graphql`
   query HomePageQuerys {
     allItems2Json {
       edges {
